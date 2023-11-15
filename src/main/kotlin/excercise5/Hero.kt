@@ -28,10 +28,10 @@ class Hero {
         }
     }
 
-    fun jalan() {
+    fun jalan(count: Int) {
         checkHealth()
-        println("$name sedang berjalan...")
-        health -= 1
+        println("$name sedang berjalan ${count}x [Health -${1*count}]")
+        health -= 1*count
         profile()
     }
 
@@ -49,38 +49,38 @@ class Hero {
     Contoh fungsi bisa mengikuti fungsi jalan() diatas.
      */
 
-    fun lari() {
+    fun lari(count: Int) {
         checkHealth()
-        println("$name sedang berlari...")
-        health -= 2
+        println("$name sedang berlari ${count}x [Health -${2*count}]")
+        health -= 2*count
         profile()
     }
 
-    fun makan() {
+    fun makan(count: Int) {
         checkHealth()
-        println("$name sedang makan...")
-        health += 2
+        println("$name sedang makan ${count}x [Health +${2*count}]")
+        health += 2*count
         profile()
     }
 
-    fun minum() {
+    fun minum(count: Int) {
         checkHealth()
-        println("$name sedang minum...")
-        health += 2
+        println("$name sedang minum ${count}x [Health +${2*count}]")
+        health += 2*count
         profile()
     }
 
-    fun lompat() {
+    fun lompat(count: Int) {
         checkHealth()
-        println("$name sedang lompat...")
-        health -= 2
+        println("$name sedang lompat ${count}x [Health -${2*count}]")
+        health -= 2*count
         profile()
     }
 
-    fun duduk() {
+    fun duduk(count: Int) {
         checkHealth()
-        println("$name sedang duduk...")
-        health += 1
+        println("$name sedang duduk ${count}x [Health +${1*count}]")
+        health += 1*count
         profile()
     }
 }

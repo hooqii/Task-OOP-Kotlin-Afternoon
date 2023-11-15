@@ -62,12 +62,12 @@ fun main() {
      * Jalankan aktivitas-aktivitas dengan memanggil fungsi-fungsi sesuai challenge diatas
      */
 
-    hero.jalan()
-    hero.lari()
-    hero.makan()
-    hero.minum()
-    hero.lompat()
-    hero.duduk()
+    hero.jalan(2)
+    hero.lari(4)
+    hero.makan(2)
+    hero.minum(2)
+    hero.lompat(7)
+    hero.duduk(4)
 
     /**
      * Latihan 5
